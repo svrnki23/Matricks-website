@@ -1,2 +1,2 @@
 # Matricks-website
-Tutoring Dashboard websitre
+Tutoring Dashboard website
