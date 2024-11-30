@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="site.js"></script>
+    <title>Contact Page</title>
+</head>
+<body class="contact-body">
+    <!--extended navbar and sidebar from base.html-->
+    <!-- Main Content -->
+    <div class="contact-text">
+        <h1>Schedule With Us!</h1>
+        <p>Give us some info and we'll get you started ASAP</p>
+        <p>Please provide the following and we'll set up a tutoring plan for you!</p>
+        <h2>*IF YOU SIGN UP WITH A FRIEND YOU WILL EACH GET $5 OFF OF YOUR RATE*</h2>
+    </div>
+    <div class="contact-main">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="enter your first name...">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="enter your last name..." > <br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="Email" placeholder="enter your email...">
+    
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="Phone" placeholder="enter your phone number..."> <br>
+    
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+               <option value="placeholder"></option>
+                <option value="SAT Math">SAT Math</option>
+                <option value="Biology">Biology</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Calculus 1">Calculus 1</option>
+                <option value="Calculus 2">Calculus 2</option>
+                <option value="Calculus 3">Calculus 3</option>
+                <option value="K-Precal Math">K-Precal Math</option>
+            </select> 
+                
+            <label for="plan">Tutoring Plan</label>
+            <select id="plan" name="plan">
+                <option value="placeholder"></option>
+                <option value="1 Hour Online ($25)">1 Hour Online ($25)</option>
+                <option value="1 Hour In Person ($25)">1 Hour In Person ($25)</option>
+                <option value="30 Minutes Online ($15)">30 Minutes Online ($15)</option>                    
+                <option value="30 Minutes In Person ($15)">30 Minutes In Person ($15)</option>
+            </select> <br>
+                
+            <label for="frequency">Frequency</label>
+            <select id="frequency" name="plan">
+                <option value="placeholder"></option>
+                <option value="Daily">Daily (Summer)</option>
+                <option value="Bi Weekly">Bi Weekly (Twice a week)</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Other">Other</option>
+            </select> 
+    
+            <label for="dates">Desired Day(s) and Times</label>
+            <input type="text" id="dates" name="dates"> <br>
+    
+            <label for="frequency">Signing up with a friend?</label>
+            <select id="frequency" name="plan">
+                <option value="placeholder"></option>
+                <option value="yes">Yes I want a discount!</option>
+                <option value="No">No I do not want a discount</option>
+            </select>
+    
+            <label for="friend">If yes, Friend's first and last name</label>
+            <input type="text" id="friend" name="friend">
+    
+            <input type="submit" value="Send">
+        </form> 
+    </div>
+</body>
+</html>

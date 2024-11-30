@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* styling for the structure of the site*/
+body {
+    margin: 0;                /* Remove default margin */
+    background-color: black;  /* Set the entire page background to black */
+    color: white; 
+}
+
+.main {
+    margin: 200px;          /* Offset for the sidebar */
+    padding: 90%;       /* Add padding for content */
+    background-color: black; /* Match body background */
+    color: white;        /* Ensure text is visible */
+    height: 100vh;       /* Full height */
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Main Content Layout */
+.main-content{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 200px;
+    margin-top: 50px;
+    background-color: black;
+}
+
+/* Card Style */
+.card {
+    background: black;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Today's Class Details */
+.class-details p {
+    font-size: 18px;
+    margin: 10px;
+    color: white;
+    margin-left: 0%;
+}
+
+.class-details .btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    text-decoration: solid;
+    text-align: center;
+    background-color: white;
+}
+
+.class-details .btn:hover {
+    background-color: maroon;
+    transition: 0.5s ease-in-out;
+}
+
+/* Upcoming Classes */
+.upcoming-list {
+    display: grid;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.upcoming-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.upcoming-item:last-child {
+    border-bottom: none;
+}
+
+.upcoming-item p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: white;
+}
+/*styling for the navbar with user icon and user name*/
+.contact-navbar {
+    background-color: black;       /* Dark background for navbar */
+    color: white;                /* White text */
+    padding: 10px 20px;          /* Add padding */
+    display: flex;               /* Flexbox for alignment */
+    align-items: center;         /* Vertically center content */
+    justify-content: space-between; /* Spread out items */
+    height: 50px;                /* Fixed height */
+    position: fixed;             /* Fixed at the top */
+    width: calc(100% - 200px);   /* Full width minus sidebar */
+    top: 0;                      /* Align to top */
+    left: 200px;                 /* Account for sidebar */
+    z-index: 1000;               /* Place above other content */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+}
+
+.contact-navbar a {
+    text-decoration: solid;       /* Remove underline from links */
+    color: white;                /* Text color */
+    font-size: 25px;             /* Font size */
+    white-space: nowrap;         /* Prevent wrapping of text */
+    font-family:'Quicksand';
+    width: 210px;
+}
+
+.contact-navbar i {
+    margin-right: 30px;          /* Space between icon and text */
+}
+
+/* styling for the fixed sidenav */
+.sidenav {
+    height: 100%;                /* Full height */
+    width: 200px;                /* Sidebar width */
+    position: fixed;             /* Fixed position */
+    left: 0;                     /* Align to the left */
+    top: 0;                      /* Start from the top */
+    background-color: maroon;      /* Dark background */
+    padding-top: 20px 10px;           /* Space at the top */
+    overflow-x: hidden;          /* Prevent horizontal scroll */
+}
+
+.sidenav a {
+    padding: 34px 24px;          /* Padding for links */
+    text-decoration: solid;       /* Remove underline */
+    font-size: 24px;             /* Font size */
+    color: white;                /* Link color */
+    display: block;              /* Display links in a block */
+}
+
+.sidenav a:hover {
+    color: black;   /* Hover effect */
+    
+}
+
+/* styling for the logo on the fixed sidenav*/
+.logo {
+    display: flex;                /* Flexbox for alignment */
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+    height: 150px;                /* Set fixed height for logo area */
+    background-color: maroon;       /* Optional: match sidebar color */
+}
+
+.logo img {
+    width: 100px;                  /* Set logo size */
+    height: 100px;                 /* Match width for a perfect circle */
+    border-radius: 50%;           /* Make the image circular */
+    object-fit: cover;            /* Ensure the image fits within the circle */
+    /*border: 2px solid white;       Optional: Add a white border for styling */
+}
+
+/*styling for the contact page*/
+.contact-img {
+    height: 70%;
+    top: 0;
+}
+
+.bg{
+    background-image: url('IMG_8678.png');
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*styling for the contact page*/
+input[type=text],input[type=tel], select, textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */ 
+    border: 1px solid maroon; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    border : none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    font-size: 16px;
+    color: whitesmoke;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: maroon;
+    color: black;
+    transition: 0.7s ease-in-out;
+}
+.contact-main {
+    margin: 200px;          /* Offset for the sidebar */
+    padding: 100%;       /* Add padding for content */
+    color: white;        /* Ensure text is visible */
+    height: 90%;       /* Full height */
+    padding: 20px;
+    margin-left: 200px;
+    background-color: black;
+    margin-top: 0;
+
+}
+
+.contact-text{
+    margin: 200px;          /* Offset for the sidebar */
+    padding: 90%;       /* Add padding for content */
+    background-color: black; /* Match body background */
+    color: white;        /* Ensure text is visible */
+    padding: 15px;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 0%;
+    
+
+} 
+  /* When moving the mouse over the submit button, add a darker green color */
+
+/*
+footer {
+    background: black;
+    color: #fff;
+    padding: 20px;
+    text-align: justify;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    margin-left: 200px;
+  }
+*/
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
