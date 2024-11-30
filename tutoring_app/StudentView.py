@@ -145,10 +145,33 @@ def student_profile_view(request):
 #     return render(request,"student_template/student_view_result.html",context)
 
     
+''' example code for the home view function which will eventually replace the placeholder home view that i currently have
+this is going to take in actual data from the database and display the session dates and info tailored to each specific student
 
-    
-        
-    
+
+from django.shortcuts import render
+from datetime import date
+
+def dashboard_view(request):
+    todays_class = {
+        'time': '10:00 AM - 11:00 AM',
+        'tutor_name': 'John Doe',
+        'session_number': 5,
+        'topic': 'Advanced Math',
+        'zoom_link': 'https://zoom.us/your-class-link',
+    }
+
+    upcoming_classes = [
+        {'date': 'Dec 1', 'time': '2:00 PM - 3:00 PM', 'session_number': 6, 'topic': 'Science Basics'},
+        {'date': 'Dec 2', 'time': '3:30 PM - 4:30 PM', 'session_number': 7, 'topic': 'Physics Essentials'},
+        {'date': 'Dec 3', 'time': '1:00 PM - 2:00 PM', 'session_number': 8, 'topic': 'Chemistry Fundamentals'},
+    ]
+
+    return render(request, 'dashboard.html', {
+        'todays_class': todays_class,
+        'upcoming_classes': upcoming_classes,
+    })
+'''
     
 
     
